@@ -1,0 +1,125 @@
+/* HEADER */
+
+header {
+    background-color: var(--dark-bg-solid);
+    font-family: var(--font-raleway);
+    color: var(--light-font-solid);
+    padding: var(--spacing-36);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    max-width: 300px;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+
+.nav__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+.nav__link:hover {
+    background-color: var(--primary-900);
+}
+
+/* MAIN */
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+    margin-left: 50px;
+    gap: var(--spacing-36);
+
+}
+
+.form__title {
+    font-family: var(--font-raleway);
+    font-size: var(--font-display);
+    font-weight: 700;
+}
+.form__text {
+    font-family: var(--font-raleway);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-36);
+}
+
+.form__item {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-20);
+    justify-content: space-between;
+}
+
+.form__label {
+    font-size: var(--font-large);
+}
+.form__input {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: var(--font-medium);
+}
+
+.form__submit {
+    margin-bottom: var(--spacing-128);
+}
+
+.submit__input-submit {
+    font-size: var(--font-xsmall);
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    border: none;
+    margin-right: var(--spacing-28);
+}
+
+.submit__label {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+}
+
+.submit__label a {
+    color: var(--secondary-solid);
+}
+
+.form__link{
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    color: var(--secondary-solid);
+    margin-top:-20px;
+    margin-bottom: 335px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark-bg-solid);
+    font-family: var(--font-raleway);
+    color: var(--light-font-solid);
+    padding: var(--spacing-128) 0 var(--spacing-16);
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: var(--spacing-36);
+}

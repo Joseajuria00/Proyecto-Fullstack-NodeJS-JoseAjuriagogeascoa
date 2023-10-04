@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit | FunkoShop</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/admin/edit.css">
+</head>
+<body>
+    <header> <!-- Inicio Header -->
+        <nav class="nav container">
+            <picture class="nav__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" class="nav__logo-img" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="../shop/shop.html" class="nav__link">VER TIENDA</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./admin.html" class="nav__link">ADMIN</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- Fin Header -->
+    <main class="container"> <!-- Inicio Main -->
+        <form class="form" action="./admin.html">
+            <h2 class="form__title">EDITAR ITEM</h2>
+            <div class="form__content">
+                <div class="form__product-select">
+                    <div class="form__select-category">
+                        <label class="form__label" for="category">Categoría:</label>
+                        <select class="form__select" name="category" id="category">
+                            <option value disabled selected hidden>Seleccionar</option>
+                        </select>
+                    </div>
+                    <div class="form__select-license">
+                        <label class="form__label" for="license">Licencia:</label>
+                        <select class="form__select" name="license" id="">
+                            <option value disabled selected hidden>Seleccionar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__product-name">
+                    <label class="form__label" for="productName">Nombre del Producto:</label>
+                    <input class="form__input form__input-name" type="text" name="productName" id="productName" placeholder="Kakashi Hatake Shippuden Saga">
+                </div>
+                <div class="form__product-description">
+                    <textarea class="form__textarea" name="description" id="desciption" rows="7" placeholder="Descripción del producto"></textarea>
+                </div>
+                <div class="form__product-info">
+                    <div class="product__sku">
+                        <label class="form__label" for="sku">SKU:</label>
+                        <input class="form__input sku__input" type="text" name="sku" id="sku" placeholder="SSK111AB001">
+                    </div>
+                    <div class="product__price">
+                        <label class="form__label" for="price">Precio:</label>
+                        <input class="form__input price__input" type="text" name="price" id="price" placeholder="0.000,00">
+                    </div>
+                    <div class="product__stock">
+                        <label class="form__label" for="stock">Stock:</label>
+                        <input class="form__input stock__input" type="text" name="stock" id="stock" placeholder="0">
+                    </div>
+                </div>
+                <div class="form__promo">
+                    <div class="promo__discount">
+                        <label class="form__label" for="descuento">Descuento:</label>
+                        <input class="form__input discount__input" type="text" name="discount" id="discount" placeholder="0">
+                    </div>
+                    <div class="promo__fee">
+                        <label class="form__label" for="cuotas">Cuotas:</label>
+                        <select class="form__select" name="cuotas" id="cuotas">
+                            <option value="0">Sin cuotas</option>
+                            <option value="3">3 Cuotas sin interés</option>
+                            <option value="6">6 Cuotas sin interés</option>
+                            <option value="9">9 Cuotas sin interés</option>
+                            <option value="12">12 Cuotas sin interés</option>
+                            <option value="18">18 Cuotas sin interés</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__image">
+                    <label class="form__label" for="imagenes">Imágenes:</label>
+                    <input class="form__input-files" type="file" name="imagenes" id="imagenes">
+                </div>
+                <div class="form__buttons">
+                    <input class="form__add form__btn" type="submit" name="add" value="Agregar Producto">
+                    <input class="form__reset form__btn" type="reset" name="reset" value="Limpiar">
+                </div>
+            </div>
+        </form>
+    </main> <!-- Fin Main -->
+    <footer class="footer"> <!-- Inicio Footer -->
+        <nav class="nav container">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a href="../shop/shop.html" class="nav__link">SHOP</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./register.html" class="nav__link">REGISTRARSE</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./login.html" class="nav__link">INGRESAR</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/contact.html" class="nav__link">CONTACTO</a>
+                </li>
+            </ul>
+            <picture class="nav__logo">
+                    <a href="../../index.html">
+                        <img src="../../img/branding/isotype.svg" class="nav__logo-img" alt="Isotipo de la marca Funkoshop">
+                    </a>
+            </picture>
+        </nav>
+        <p class="footer__copyright container">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer> <!-- Fin Footer -->
+</body>
+</html>

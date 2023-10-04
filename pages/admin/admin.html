@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | FunkoShop</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/admin/admin.css">
+</head>
+<body>
+    <header> <!-- Inicio Header -->
+        <nav class="nav container">
+            <picture class="nav__logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" class="nav__logo-img" alt="Isologotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="../shop/shop.html" class="nav__link">VER TIENDA</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./admin.html" class="nav__link">ADMIN</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- Fin Header -->
+    <main class="container"> <!-- Inicio Main -->
+        <div class="search">
+            <button class="search__button"><iconify-icon icon="material-symbols:search"></iconify-icon></button>
+            <input class="search__input" type="search" placeholder="código, nombre o categoría">
+        </div>
+        <div class="list">
+            <div class="list__header">
+                <h2 class="list__title">LISTADO DE PRODUCTOS</h2>
+                <div class="list__add">
+                    <p class="add__text">AGREGAR</p>
+                    <a href="./create.html"><button class="add__button">+</button></a>
+                </div>
+            </div>
+            <div class="grid-container">
+                <p class="grid__title-1">ID</p>
+                <p class="grid__title-2">Código</p>
+                <p class="grid__title-3">Nombre del Producto</p>
+                <p class="grid__title-4">Categoría</p>
+                <p class="grid__title-5"></p>
+
+                <p class="grid__item-text">1</p>
+                <p class="grid__item-text">STW001001</p>
+                <p class="grid__item-text">Baby Yoda Blueball</p>
+                <p class="grid__item-text">STAR WARS</p>
+                <div class="grid__item-buttons">
+                    <a href="./edit.html">
+                    <button class="item__edit"><iconify-icon icon="material-symbols:edit"></iconify-icon></button>
+                    </a>
+                    <button class="item__delete"><iconify-icon icon="material-symbols:delete"></iconify-icon></button>
+                </div>
+            </div>
+        </div>
+    </main> <!-- Fin Main -->
+    <footer class="footer"> <!-- Inicio Footer -->
+        <nav class="nav container">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a href="../shop/shop.html" class="nav__link">SHOP</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./register.html" class="nav__link">REGISTRARSE</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./login.html" class="nav__link">INGRESAR</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./pages/contact.html" class="nav__link">CONTACTO</a>
+                </li>
+            </ul>
+            <picture class="nav__logo">
+                    <a href="../../index.html">
+                        <img src="../../img/branding/isotype.svg" class="nav__logo-img" alt="Isotipo de la marca Funkoshop">
+                    </a>
+            </picture>
+        </nav>
+        <p class="footer__copyright container">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer> <!-- Fin Footer -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
