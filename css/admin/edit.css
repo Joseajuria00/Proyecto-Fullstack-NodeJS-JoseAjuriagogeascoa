@@ -161,8 +161,23 @@ header {
 .form__input-files {
     font-size: var(--font-xsmall);
 }
-.form__input-files + button {
-    background-color: red;
+
+.form__images {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.edit__img {
+    max-width: 150px;
+    padding-bottom: var(--spacing-8);
+
+}
+
+.edit__img img {
+    border-bottom: 2px solid var(--primary-solid);
+}
+.edit__img-text {
+    font-family: var(--font-raleway);
 }
 
 .form__buttons {
@@ -181,8 +196,6 @@ header {
 .form__btn:hover {
     opacity: 50%;
 }
-
-
 
 /* FOOTER */
 footer {

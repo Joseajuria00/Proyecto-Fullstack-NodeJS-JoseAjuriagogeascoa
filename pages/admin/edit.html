@@ -86,11 +86,21 @@
                 </div>
                 <div class="form__image">
                     <label class="form__label" for="imagenes">Imágenes:</label>
-                    <input class="form__input-files" type="file" name="imagenes" id="imagenes">
+                    <input class="form__input-files" type="file" name="imagenes" id="imagenes" multiple>
                 </div>
+                <div class="form__images">
+                    <div class="edit__img">
+                        <img src="" alt="">
+                        <p class="edit__img-text">Frente</p>
+                    </div>
+                    <div class="edit__img">
+                        <img src="" alt="">
+                        <p class="edit__img-text">Dorso</p>
+                    </div>
+                </div>
+
                 <div class="form__buttons">
-                    <input class="form__add form__btn" type="submit" name="add" value="Agregar Producto">
-                    <input class="form__reset form__btn" type="reset" name="reset" value="Limpiar">
+                    <input class="form__add form__btn" type="submit" name="add" value="Modificar Producto">
                 </div>
             </div>
         </form>

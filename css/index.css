@@ -61,12 +61,8 @@ header {
     background-color: var(--primary-900);
 }
 
-.nav__cart {
-    transition: background .3s ease-in-out;
-}
-
 .nav__cart:hover {
-    background-color: var(--primary-900);
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(343deg) brightness(111%) contrast(104%);
 }
 
 /* HERO */
@@ -184,11 +180,23 @@ header {
     font-family: var(--font-raleway);
     font-size: var(--font-display);
     text-transform: uppercase;
+    cursor: text;
 }
 
-.slider__items {
+/*.slider__items {
     display: flex;
     gap: var(--spacing-24);
+}*/
+.glide__arrows iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700
+}
+.glide__arrow--left {
+    left: 0;
+}
+.glide__arrow--right {
+    right: 0;
 }
 
 .card-item__cover {
