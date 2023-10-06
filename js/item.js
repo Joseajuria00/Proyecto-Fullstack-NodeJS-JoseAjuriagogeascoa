@@ -8,3 +8,9 @@ subtract.addEventListener('click', () => {
         quantity.value = Number(quantity.value)-1
     }
 });
+
+quantity.addEventListener('change', () => {
+    if(Number(quantity.value)<0){
+        quantity.value = 0
+    }
+});
