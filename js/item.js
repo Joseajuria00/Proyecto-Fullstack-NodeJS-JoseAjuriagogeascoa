@@ -10,7 +10,8 @@ subtract.addEventListener('click', () => {
 });
 
 quantity.addEventListener('change', () => {
-    if(Number(quantity.value)<0){
+    quantity.value = parseInt(Number(quantity.value));
+    if(Number(quantity.value)<0 || isNaN(quantity.value)){
         quantity.value = 0
     }
 });
