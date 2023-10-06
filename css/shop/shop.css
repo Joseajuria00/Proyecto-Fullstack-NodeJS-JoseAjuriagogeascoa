@@ -60,12 +60,8 @@ header {
     background-color: var(--primary-900);
 }
 
-.nav__cart {
-    transition: background .3s ease-in-out;
-}
-
 .nav__cart:hover {
-    background-color: var(--primary-900);
+    filter: brightness(0) saturate(100%) invert(36%) sepia(47%) saturate(4993%) hue-rotate(343deg) brightness(111%) contrast(104%);
 }
 
 /* ASIDE */
@@ -244,6 +240,48 @@ aside {
 .card-item__promo {
     font-size: var(--font-xsmall);
     color: var(--secondary-solid);
+    font-weight: 700;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-12);
+    padding: var(--spacing-68) 0;
+}
+
+.pagination .pagination__link {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-xsmall);
+    font-weight: 700;
+    border-radius: 4px;
+    padding: var(--spacing-12) var(--spacing-16);
+    border: 2px solid var(--dark-300);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.pagination .pagination__link:first-of-type,
+.pagination .pagination__link:last-of-type {
+    color: var(--dark-500);
+    padding: var(--spacing-12) 10px;
+}
+
+.pagination .pagination__link:hover {
+    background-color: var(--primary-solid);
+    color: var(--light-bg-solid);
+    border-color: var(--primary-500);
+}
+
+.pagination .pagination__link--selected {
+    border-color: var(--primary-solid);
+    color: var(--primary-solid);
+}
+
+.pagination iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-xsmall);
     font-weight: 700;
 }
 
