@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit | FunkoShop</title>
+    <title>Create | FunkoShop</title>
     <link rel="stylesheet" href="../../css/styles/styles.css">
     <link rel="stylesheet" href="../../css/styles/stylesAdmin.css">
-    <link rel="stylesheet" href="../../css/admin/edit.css">
+    <link rel="stylesheet" href="../../css/admin/create.css">
 </head>
 <body>
     <header> <!-- Inicio Header -->
@@ -31,7 +31,7 @@
     </header> <!-- Fin Header -->
     <main class="container"> <!-- Inicio Main -->
         <form class="form" action="./admin.html">
-            <h2 class="form__title">EDITAR ITEM</h2>
+            <h2 class="form__title">CREAR NUEVO ITEM</h2>
             <div class="form__content">
                 <div class="form__product-select">
                     <div class="form__select-category">
@@ -89,19 +89,9 @@
                     <label class="form__label" for="imagenes">Imágenes:</label>
                     <input class="form__input-files" type="file" name="imagenes" id="imagenes" multiple>
                 </div>
-                <div class="form__images">
-                    <div class="edit__img">
-                        <img src="" alt="">
-                        <p class="edit__img-text">Frente</p>
-                    </div>
-                    <div class="edit__img">
-                        <img src="" alt="">
-                        <p class="edit__img-text">Dorso</p>
-                    </div>
-                </div>
-
                 <div class="form__buttons">
-                    <input class="form__add form__btn" type="submit" name="add" value="Modificar Producto">
+                    <input class="form__add form__btn" type="submit" name="add" value="Agregar Producto">
+                    <input class="form__reset form__btn" type="reset" name="reset" value="Limpiar">
                 </div>
             </div>
         </form>
@@ -119,7 +109,7 @@
                     <a href="./login.html" class="nav__link">INGRESAR</a>
                 </li>
                 <li class="nav__item">
-                    <a href="./pages/contact.html" class="nav__link">CONTACTO</a>
+                    <a href="../contact.html" class="nav__link">CONTACTO</a>
                 </li>
             </ul>
             <picture class="nav__logo">
