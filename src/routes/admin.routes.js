@@ -7,13 +7,14 @@ router.get('/', adminControllers.admin);
 router.get('/create', adminControllers.create);
 router.post('/create', adminControllers.createSend);
 router.get('/edit/:id', adminControllers.edit);
-router.post('/edit/:id', adminControllers.editSend);
+router.put('/edit/:id', adminControllers.editSend);
 router.delete('/delete/:id', adminControllers.delete);
 
 /* AUTH ROUTES */
-router.get('/login', (req, res) => res.send('Route for Login View'));
-router.post('/login', (req, res) => res.send('Route for '));
-router.get('/register', (req, res) => res.send('Route for Register View'));
-router.post('/register', (req, res) => res.send('Route for '));
+router.get('/login', adminControllers.login);
+router.post('/login', adminControllers.loginSend);
+router.get('/register', adminControllers.register);
+router.post('/register', adminControllers.registerSend);
+router.get('/logout', adminControllers.logout);
 
 module.exports = router;
